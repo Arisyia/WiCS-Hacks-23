@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "WiCS Game",
+  "description": "GAME DESC HERE",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "EXTENSION_PIC.png",
+    "default_popup": "PAGE_POPUP_WHEN_EXTENSION_CLICKED.html",
+    "default_title": "GAME NAME"
+  },
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "icons": {
+    "128": "icon1.png",
+    "48": "icon1.png",
+    "16": "icon1.png"
+  },
+  "action": {
+    "default_popup": "html/popup.html"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  }
+}
